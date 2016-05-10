@@ -14,3 +14,5 @@ RUN wget http://downloads.rclone.org/rclone-current-linux-amd64.zip && \
 	  rm rclone-current-linux-amd64.zip && \
 	  mv rclone-*/rclone /usr/bin/ && \
 	  rm -rf rclone-*
+
+EXPOSE 53682
