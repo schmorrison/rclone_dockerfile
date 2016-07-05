@@ -14,8 +14,7 @@ RUN apk add --update \
 RUN wget http://pub.rclone.org/v1.29-33-g085677d%CE%B2/rclone-v1.29-33-g085677d%CE%B2-linux-amd64.zip \
 	&& unzip rclone*.zip \
 	&& mv  rclone-v1.29-33-g085677d?-linux-amd64/rclone /usr/bin/ \
-	&& ls /usr/bin \
-	&& rm -rf rclone-*
+	&& ls /usr/bin 
 
 ENTRYPOINT ["/usr/bin/rclone"]
 CMD ["-v", "copy", "gdrive:/", "acd:/GDriveBackup/CleanFlo/todaytest"]
