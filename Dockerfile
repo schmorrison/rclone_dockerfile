@@ -17,4 +17,4 @@ RUN wget http://pub.rclone.org/v1.29-33-g085677d%CE%B2/rclone-v1.29-33-g085677d%
 	&& ls /usr/bin \
 	&& rm -rf rclone-*
 
-ENTRYPOINT ["/usr/bin/rclone"]
+CMD ["/usr/bin/rclone", "-V"]
